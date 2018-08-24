@@ -1,5 +1,7 @@
 # Install git in Windows
 
+[Back to README](../README.md)
+
 1. Enable *Windows Subsystem for Linux* (WSL)
     1. Press **WIN + Q**
     1. Enter **powershell**
@@ -21,3 +23,5 @@
 1. Launch BUW
     1. Press **WIN + Q**
     1. Enter **bash**
+
+[Back to README](../README.md)
