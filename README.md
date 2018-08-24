@@ -42,32 +42,32 @@ If you didn't get a output looking like ```git version X.X.X``` you'll need to i
 
 ## Commonly used commands
 
-#### **git clone** git@git-repo.git
+#### git clone *git@git-repo.git*
 Downloads the content of the git repository.
 
-#### **git pull**
+#### git pull
 Get latest changes from the server.
 
-#### **git branch -a**
+#### git branch -a
 Lists all branches in your machine.
 
-#### **git branch** "new-branch-name"
+#### git branch *"new-branch-name"*
 Creates a branch.
 
-#### **git checkout** "branch-to-checkout"
+#### git checkout *"branch-to-checkout"*
 Switch to a different branch.
 
-#### **git branch -d** "branch-to-delete"
+#### git branch -d *"branch-to-delete"*
 Delete a branch. Make sure you are not checked out on the branch to delete.
 
-#### **git status**
+#### git status
 Show changed files and what files has been marked for add.
 
-#### **git add** file-to-add.ext
+#### git add *file-to-add.ext*
 Adds a file to the staged files list. You may also use patterns to add multiple files, for example **src/*** to add all files in src folder.
 
-#### **git commit -m** "Short description of what changes you've made"
+#### git commit -m *"Short description of what changes you've made"*
 Create a commit to the currently checked out branch.
 
-#### **git push**
+#### git push
 Pushes the new commits to the server.
