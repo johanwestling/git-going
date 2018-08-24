@@ -1,6 +1,18 @@
 # Git going
-How to get git configured to work with ssh (github) and basic git commands for the terminal.
+How to get git configured to work with ssh (github) and commonly used git commands for the terminal.
 
+## Installation
+There are multiple option how to get git installed on your system, and some operating system have it installed by default.
+
+Lets check if git is already installed on your system:
+1. Open terminal.
+1. Check the git version:
+    ```git --version```
+
+If you didn't get a output looking like ```git version X.X.X``` you'll need to install git for your system.
+* [Windows](./docs/git-windows.md)
+
+## Configuration
 1. Open terminal.
 1. Set git user name & email: 
     ```git config --global user.name "Firstname Lastname"```
@@ -27,3 +39,35 @@ How to get git configured to work with ssh (github) and basic git commands for t
 1. Test your ssh connection:
     ```ssh -T git@github.com```
 1. If asked for authenticity of host github.com, enter **yes**.
+
+## Commonly used commands
+
+#### **git clone** git@git-repo.git
+Downloads the content of the git repository.
+
+#### **git pull**
+Get latest changes from the server.
+
+#### **git branch -a**
+Lists all branches in your machine.
+
+#### **git branch** "new-branch-name"
+Creates a branch.
+
+#### **git checkout** "branch-to-checkout"
+Switch to a different branch.
+
+#### **git branch -d** "branch-to-delete"
+Delete a branch. Make sure you are not checked out on the branch to delete.
+
+#### **git status**
+Show changed files and what files has been marked for add.
+
+#### **git add** file-to-add.ext
+Adds a file to the staged files list. You may also use patterns to add multiple files, for example **src/*** to add all files in src folder.
+
+#### **git commit -m** "Short description of what changes you've made"
+Create a commit to the currently checked out branch.
+
+#### **git push**
+Pushes the new commits to the server.
