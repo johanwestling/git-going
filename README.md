@@ -47,6 +47,9 @@ If you didn't get a output looking like ```git version X.X.X``` you'll need to i
 1. Enter for example device name in the **Title** field.
 1. **Paste** the public key in the **Key** field.
 1. Click the **Add SSH key**.
+1. Enable SSO for your SSH key (if Single Sign On is activated for your account):
+    * Click **SSO** _(next to Delete button)_.
+    * Complete SSO authentication.
 1. Return to terminal.
 1. Test your ssh connection:
     ```
