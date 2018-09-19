@@ -59,11 +59,19 @@ If you didn't get a output looking like ```git version X.X.X``` you'll need to i
 
 ## Commonly used commands
 
+### Clone & pull
+
+How you "download" and "update" your local copy of files from the server.
+
 #### git clone *git@git-repo.git*
 Downloads the content of the git repository.
 
 #### git pull
 Get latest changes from the server.
+
+### Branches
+
+How you can contain and group your changes depending on what you're working on.
 
 #### git branch -a
 Lists all branches in your machine.
@@ -71,11 +79,18 @@ Lists all branches in your machine.
 #### git branch *"new-branch-name"*
 Creates a branch.
 
+#### git branch -b *"new-branch-name"*
+Creates a branch & switches to it.
+
 #### git checkout *"branch-to-checkout"*
 Switch to a different branch.
 
 #### git branch -d *"branch-to-delete"*
 Delete a branch. Make sure you are not checked out on the branch to delete.
+
+### Commit & Push
+
+How you manage changed files and submit them to the server.
 
 #### git status
 Show changed files and what files has been marked for add.
@@ -88,3 +103,10 @@ Create a commit to the currently checked out branch.
 
 #### git push
 Pushes the new commits to the server.
+
+### Random
+
+Various commands that might be needed from time to time.
+
+#### git clean -xdf
+Removes all untracked files from the file system.
