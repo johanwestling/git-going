@@ -14,29 +14,29 @@ If you didn't get a output looking like ```git version X.X.X``` you'll need to i
 
 ## Configuration
 1. Open terminal.
-1. Set git user name & email: 
+1. Set git user name & email:
     ```
     git config --global user.name "Firstname Lastname"
     ```
     ```
     git config --global user.email "firstname.lastname@whatever.io"
     ```
-1. Set git to use new behavior for git push: 
+1. Set git to use new behavior for git push:
     ```
     git config --global push.default simple
     ```
-1. Generate a ssh key for your device: 
+1. Generate a ssh key for your device:
     ```
     ssh-keygen
     ```
 1. Press **ENTER** (defaults to ~/.ssh/id_rsa)
 1. Press **ENTER** (to skipping password)
 1. Press **ENTER** (to skipping password)
-1. Add ssh key to the ssh-agent: 
+1. Add ssh key to the ssh-agent:
     ```
     eval $(ssh-agent) ssh-add ~/.ssh/id_rsa
     ```
-1. Get the ssh public key: 
+1. Get the ssh public key:
     ```
     cat ~/.ssh/id_rsa.pub
     ```
@@ -64,7 +64,10 @@ If you didn't get a output looking like ```git version X.X.X``` you'll need to i
 How you "download" and "update" your local copy of files from the server.
 
 #### git clone *git@git-repo.git*
-Downloads the content of the git repository.
+Downloads the content of master branch in the git repository.
+
+#### git clone -b *branch-name* *git@git-repo.git*
+Downloads the content of a specific branch in the git repository.
 
 #### git pull
 Get latest changes from the server.
@@ -107,6 +110,12 @@ Pushes the new commits to the server.
 ### Random
 
 Various commands that might be needed from time to time.
+
+#### git checkout .
+Resets all files to the branch initial state (except new files).
+
+#### git reset --hard
+Resets all files to the branch initial state.
 
 #### git clean -xdf
 Removes all untracked files from the file system.
