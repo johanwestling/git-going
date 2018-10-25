@@ -10,7 +10,7 @@ Lets check if git is already installed on your system:
     ```git --version```
 
 If you didn't get a output looking like ```git version X.X.X``` you'll need to install git for your system.
-* [Windows](./docs/git-windows.md)
+* Windows: [Setup Ubuntu on Windows Subsystem for Linux](https://github.com/johanwestling/wsl-install)
 
 ## Configuration
 1. Open terminal.
