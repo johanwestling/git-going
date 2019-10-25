@@ -86,7 +86,7 @@ Creates a branch.
 Creates a branch & switches to it.
 
 #### git checkout *"branch-to-checkout"*
-Switch to a different branch.
+Switch to a existing branch.
 
 #### git branch -d *"branch-to-delete"*
 Delete a branch. Make sure you are not checked out on the branch to delete.
