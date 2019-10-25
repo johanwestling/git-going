@@ -82,7 +82,7 @@ Lists all branches in your machine.
 #### git branch *"new-branch-name"*
 Creates a branch.
 
-#### git branch -b *"new-branch-name"*
+#### git checkout -b *"new-branch-name"*
 Creates a branch & switches to it.
 
 #### git checkout *"branch-to-checkout"*
