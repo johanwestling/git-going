@@ -1,6 +1,8 @@
 # Git going
 How to get git configured to work with ssh (github) and commonly used git commands for the terminal.
 
+<br>
+
 ## Installation
 There are multiple option how to get git installed on your system, and some operating system have it installed by default.
 
@@ -11,6 +13,8 @@ Lets check if git is already installed on your system:
 
 If you didn't get a output looking like ```git version X.X.X``` you'll need to install git for your system.
 * Windows: [Setup Ubuntu on Windows Subsystem for Linux](https://github.com/johanwestling/wsl-install)
+
+<br>
 
 ## Configuration
 1. Open terminal.
@@ -57,10 +61,11 @@ If you didn't get a output looking like ```git version X.X.X``` you'll need to i
     ```
 1. If asked for authenticity of host github.com, enter **yes**.
 
-## Commonly used commands
+<br>
+
+## Common commands
 
 ### Clone & pull
-
 How you "download" and "update" your local copy of files from the server.
 
 #### git clone *git@git-repo.git*
@@ -72,8 +77,9 @@ Downloads the content of a specific branch in the git repository.
 #### git pull
 Get latest changes from the server.
 
-### Branches
+---
 
+### Branches
 How you can contain and group your changes depending on what you're working on.
 
 #### git branch -a
@@ -91,8 +97,9 @@ Switch to a existing branch.
 #### git branch -d *"branch-to-delete"*
 Delete a branch. Make sure you are not checked out on the branch to delete.
 
-### Commit & Push
+---
 
+### Commit & Push
 How you manage changed files and submit them to the server.
 
 #### git status
@@ -107,8 +114,9 @@ Create a commit to the currently checked out branch.
 #### git push
 Pushes the new commits to the server.
 
-### Random
+---
 
+### Random
 Various commands that might be needed from time to time.
 
 #### git checkout .
