@@ -31,18 +31,18 @@ If you didn't get a output looking like ```git version X.X.X``` you'll need to i
     ```
 1. Generate a ssh key for your device:
     ```
-    ssh-keygen
+    ssh-keygen -t ed25519
     ```
-1. Press **ENTER** (defaults to ~/.ssh/id_rsa)
+1. Press **ENTER** (defaults to ~/.ssh/id_ed25519)
 1. Press **ENTER** (to skipping password)
 1. Press **ENTER** (to skipping password)
 1. Add ssh key to the ssh-agent:
     ```
-    eval $(ssh-agent) ssh-add ~/.ssh/id_rsa
+    eval $(ssh-agent) ssh-add ~/.ssh/id_ed25519
     ```
 1. Get the ssh public key:
     ```
-    cat ~/.ssh/id_rsa.pub
+    cat ~/.ssh/id_ed25519.pub
     ```
 1. **Copy** the output.
 1. Open browser.
